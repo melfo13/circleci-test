@@ -9,6 +9,9 @@ jobs:
           command: yarn eslint
           name: Run ESLint
       - run:
+          command: yarn add flow-bin
+          name: Add Flow-bin
+      - run:
           command: yarn flow
           name: Flow
       - run:
